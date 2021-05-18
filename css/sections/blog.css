@@ -1,0 +1,45 @@
+/* Variables - kintamieji */
+:root {
+  --text-main-color: #999999;
+  --text-color-light: #c9c9c9;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary: #a2c0be;
+  --primary-hover: #769694;
+  --dark: rgb(32, 32, 32);
+}
+
+/* nusitaikyti i head section blog viduje */
+.blog .heading-section {
+  margin-bottom: 3em;
+}
+
+.blog-post__image {
+  display: block;
+  margin-bottom: 0.7em;
+}
+
+.blog-post__title {
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-bottom: 0.4em;
+}
+
+.blog-post__date {
+  color: var(--text-color-light);
+  margin-bottom: 1em;
+}
+
+.blog-post__body {
+  margin-bottom: 1em;
+}
+
+.blog-post__link {
+  border-radius: 6px;
+  color: var(--primary);
+  padding: 3px 10px 3px 0;
+  transition: color 0.3s ease-in-out, background-color 1s ease-in-out;
+}
+.blog-post__link:hover {
+  color: var(--primary-hover);
+  background-color: rgb(246, 185, 174);
+}

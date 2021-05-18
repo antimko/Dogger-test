@@ -1,0 +1,54 @@
+/* Variables - kintamieji */
+:root {
+  --text-main-color: #999999;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary: #a2c0be;
+  --dark: rgb(32, 32, 32);
+}
+
+.container {
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+body {
+  padding-bottom: 500px;
+  font-family: var(--main-font);
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: var(--text-main-color);
+}
+
+/* Common styles  */
+
+.heading-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.paw--center {
+  font-size: 2.5rem;
+  color: rgb(162, 192, 190);
+  padding: 0 10px;
+}
+
+.paw--left {
+  transform: rotate(-45deg);
+  color: rgba(162, 192, 190, 0.4);
+}
+
+.paw--right {
+  transform: rotate(45deg);
+  color: rgba(162, 192, 190, 0.4);
+}
+
+.section__title {
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family: var(--main-font);
+}

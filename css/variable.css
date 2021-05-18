@@ -1,0 +1,10 @@
+/* Variables - kintamieji */
+:root {
+  --text-main-color: #999999;
+  --text-color-light: #c9c9c9;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary: #a2c0be;
+  --primary-hover: #769694;
+  --dark: rgb(32, 32, 32);
+  --white: #fff;
+}

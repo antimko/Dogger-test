@@ -1,0 +1,162 @@
+/* responsive */
+@media screen and (min-width: 470px) {
+  /* footer beter */
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .footer__about,
+  .footer__newsletter,
+  .footer__hr,
+  .footer__copy {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav-toggle {
+    display: none;
+  }
+
+  .hero {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: initial;
+    background-position: bottom right;
+  }
+
+  .hero__title {
+    max-width: 40%;
+  }
+
+  /* blog secion */
+
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .blog .heading-section {
+    grid-column: span 2;
+  }
+
+  /* Gallery section */
+  /* pasirasyti su min max kad nereiketu daugiau media */
+
+  /*  */
+  .gallery-grid {
+    /* grid-template-columns: repeat(auto-fill/auto-fit  minmax(<kiek min plotis>, <max plotis 1fr>)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  /* footer  */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    grid-template-areas:
+      "about about about"
+      ". . ."
+      "hr hr hr"
+      "copy copy copy";
+  }
+  .footer__about {
+    grid-area: about;
+  }
+  .footer__newsletter {
+    grid-column: auto;
+  }
+  .footer__hr {
+    grid-area: hr;
+  }
+  .footer__copy {
+    grid-area: copy;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+  /* footer  */
+  .footer-grid {
+    grid-template-columns: 1.4fr 0.7fr 1fr 1fr;
+    row-gap: 2rem;
+    grid-template-areas:
+      "about nav-link social news-let"
+      "hr hr hr hr"
+      "copy copy copy copy";
+  }
+
+  .footer__newsletter {
+    grid-column: news-let;
+  }
+
+  .container {
+    max-width: 920px;
+  }
+
+  .welcome-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "text1 img1"
+      "img2 text2"
+      "text3 img3";
+    column-gap: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .card_img {
+    margin-top: 0;
+  }
+
+  .grid--first {
+    grid-area: img1;
+  }
+
+  .grid--second {
+    grid-area: text1;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .grid--third {
+    grid-area: img2;
+  }
+
+  .grid--fourth {
+    grid-area: text2;
+    margin-left: 50px;
+  }
+
+  .grid--fifth {
+    grid-area: img3;
+  }
+
+  .grid--sixth {
+    margin-right: 50px;
+    grid-area: text3;
+    text-align: right;
+  }
+
+  /* blog section  */
+
+  .blog-post {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0 1em;
+  }
+
+  .blog-post__image {
+    grid-row: 1 / 5;
+  }
+}

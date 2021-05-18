@@ -1,0 +1,124 @@
+/* Variables - kintamieji */
+:root {
+  --text-main-color: #999999;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary: #a2c0be;
+  --dark: rgb(32, 32, 32);
+}
+
+/* header section */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+}
+
+.header-flex {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: none;
+}
+
+/* kai paspaudem ant burgerio tai main-van gauna klase active */
+.main-nav.active {
+  display: block;
+}
+
+.main-logo {
+  font-size: 2rem;
+}
+
+.main-nav-toggle {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* hero section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  min-height: 600px;
+  /* border: 1px solid #000; */
+
+  background-image: url("../img/dogger_img_1.png");
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero__title {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+}
+
+.hero__subtitle {
+  color: var(--text-main-color);
+  font-family: var(--main-font);
+  font-weight: normal;
+}
+
+/* welcome section */
+
+.section__description,
+.card__description {
+  font-family: var(--main-font);
+  color: var(--text-main-color);
+}
+
+.welcome-cards {
+  margin-top: 50px;
+}
+
+.card_img {
+  margin-top: 50px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.card_img:hover {
+  box-shadow: 7px 7px var(--primary);
+}
+
+.card__title {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 20px 0;
+}
+
+.card__description {
+  margin-bottom: 20px;
+}
+
+.card-content > a.btn {
+  font-family: var(--main-font);
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  color: white;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.card-content > a.btn:hover {
+  background-color: var(--dark);
+}
+
+.btn--primary {
+  background-color: var(--primary);
+}
+
+/* Blog section */
